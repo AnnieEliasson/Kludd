@@ -6,6 +6,9 @@ import figure from "./figure.json"
 
 
 const FigureBox = () => {
+
+
+
     const data = figure.data;
 
     return(

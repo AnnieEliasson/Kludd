@@ -12,6 +12,7 @@
     box-shadow: 3px 3px 8px black,
     inset 2px 2px 2px white,
     inset -2px -2px 5px black;
+    pointer-events: all;
 
     button{
         background-color: transparent;
@@ -44,4 +45,28 @@
     inset 2px 2px 2px white,
     inset -2px -2px 5px black;
     margin: 30px auto;
+}
+
+.fade{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.39);
+    position: absolute;
+    pointer-events: none;
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fader 0.7s ease;
+    
+}
+
+.view-fade{
+    display: flex;
+}
+
+@keyframes fader {
+    from{backdrop-filter: blur(0px);}
+
+    to{backdrop-filter: blur(5px);}
 }
