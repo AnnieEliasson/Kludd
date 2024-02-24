@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "name": "Buster",
+            "type": "Dog",
+            "color": "green",
+            "rank": "diamond",
+            "image": ""
+        },
+        {
+            "name": "Princess",
+            "type": "Bunny",
+            "color": "pink",
+            "rank": "gold",
+            "image": ""
+        },
+        {
+            "name": "Sylvester",
+            "type": "Moose",
+            "color": "blue",
+            "rank": "silver",
+            "image": ""
+        },
+        {
+            "name": "George",
+            "type": "Mouse",
+            "color": "grey",
+            "rank": "silver",
+            "image": ""
+        },
+        {
+            "name": "Moses",
+            "type": "cow",
+            "color": "yellow",
+            "rank": "diamond",
+            "image": ""
+        },
+        {
+            "name": "Francisco",
+            "type": "Cat",
+            "color": "orange",
+            "rank": "silver",
+            "image": ""
+        }
+    ]
+}

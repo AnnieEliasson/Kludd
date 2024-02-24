@@ -1,0 +1,17 @@
+.Menu{
+    font-size: 2rem;
+    border: 0px solid white;
+    position: fixed;
+    top: 100px;
+    left: 80px;
+
+    li{
+        cursor: pointer;
+
+        &:hover{
+            color: rgb(79, 141, 180);
+        }
+    }
+
+    
+}

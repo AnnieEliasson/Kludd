@@ -1,0 +1,41 @@
+.Counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    height: 100%;
+
+    p{
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 2px 2px 2px black;
+        color: white;
+        box-shadow: 2px 2px 2px black,
+        inset -2px -2px 2px black,
+        inset 2px 2px 2px white;
+    }
+
+    button{
+        width: 70px;
+        height: 70px;
+        font-size: 5rem;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 10px;
+        text-shadow: 2px 2px 2px black;
+        color: white;
+        
+
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.212);
+        }
+    }
+}
