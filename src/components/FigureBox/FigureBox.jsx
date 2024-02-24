@@ -1,15 +1,13 @@
+import Bio from "../Figure/Bio/Bio";
 import Figure from "../Figure/Figure"
 import "./FigureBox.css"
 import figure from "./figure.json"
 
 
 
-const FigureBox = ({show2}) => {
+const FigureBox = () => {
     const data = figure.data;
 
-
-    
-    
     return(
         <div className="FigureBox">
             <h2>Figures</h2>
@@ -20,11 +18,13 @@ const FigureBox = ({show2}) => {
                     rank = {figure.rank} 
                     name = {figure.name}
                     type = {figure.type}
-                    color = {figure.color} />
+                    color = {figure.color}
+                    image = {figure.image}
+                    bio = {figure.bio} />
                 })
             }
             
-            
+            <Bio />
         </div>
     )
 }

@@ -5,42 +5,44 @@
             "type": "Dog",
             "color": "green",
             "rank": "diamond",
-            "image": ""
+            "image": "https://images.unsplash.com/photo-1648071216843-0d304a6d49b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "bio": "Jag är en Hund!"
         },
         {
             "name": "Princess",
             "type": "Bunny",
             "color": "pink",
             "rank": "gold",
-            "image": ""
+            "image": "https://images.unsplash.com/photo-1570989086575-503363bb091b?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "bio": "Jag är en Kanin!"
         },
         {
             "name": "Sylvester",
             "type": "Moose",
             "color": "blue",
             "rank": "silver",
-            "image": ""
+            "image": "https://images.unsplash.com/photo-1549471013-3364d7220b75?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             "name": "George",
             "type": "Mouse",
             "color": "grey",
             "rank": "silver",
-            "image": ""
+            "image": "https://images.unsplash.com/photo-1553987882-91d92995e16c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             "name": "Moses",
             "type": "cow",
             "color": "yellow",
             "rank": "diamond",
-            "image": ""
+            "image": "https://images.unsplash.com/photo-1551606712-ce1d9e8fbee4?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             "name": "Francisco",
             "type": "Cat",
             "color": "orange",
             "rank": "silver",
-            "image": ""
+            "image": "https://images.unsplash.com/photo-1506891536236-3e07892564b7?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     ]
 }

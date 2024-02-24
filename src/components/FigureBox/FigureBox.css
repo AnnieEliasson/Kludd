@@ -1,12 +1,14 @@
 .FigureBox{
-        width: 700px;
-        height: 470px;
+        width: 850px;
+        height: 600px;
+        padding: 30px 40px;
+        padding-right: 60px;
         background: rgb(29,29,29);
         background: linear-gradient(360deg, rgba(29,29,29,1) 0%, rgb(61, 61, 61) 100%);
         border: 1px solid black;
         border-radius: 30px;
         display: flex;
-        gap: 15px;
+        gap: 35px;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
