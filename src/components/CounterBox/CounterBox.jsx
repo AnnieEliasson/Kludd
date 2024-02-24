@@ -1,9 +1,8 @@
 import Counter from "../Counter/Counter"
 import "./CounterBox.css"
 
-const CounterBox = ({show}) => {
+const CounterBox = () => {
 
-    if(show)
 
     return (
     <div className="CounterBox">

@@ -3,42 +3,47 @@ import CounterBox from "../CounterBox/CounterBox"
 import FigureBox from "../FigureBox/FigureBox"
 import "../CounterBox/CounterBox.css"
 import "./Menu.css"
+import Testing from "../Testing/Testing"
+import Something from "../Somehing/Something"
 
 const Menu = () => {
 
 
     let [show, SetShow] = useState(false)
     let [show2, SetShow2] = useState(false)
-    
 
+    const Hide = (e)=>{
+
+        let allVisible = document.querySelectorAll(".show")
+        allVisible.forEach(element => {
+            element.classList.remove("show")
+        });
+
+
+        let test = document.querySelector(`.${e.target.id}`)
+        test.classList.toggle("show")
+        console.log(e.target.id);
+    }
+    
     return(
         <>
         <ul className="Menu">
-            <li onClick={()=>{
-                if(!show){
-                SetShow(show = true)
-                SetShow2(show2 = false)
-            }
-                
+                      
+            <li id="CounterBox" onClick={Hide}>Click Counter</li>
+            <li id="FigureBox" onClick={Hide}>Figures</li>
+            <li id="Testing" onClick={Hide}>Testing</li>
+            <li id="Something" onClick={Hide}>Something</li>
 
-                else
-                SetShow(show = false)
-            }}>Click Counter</li>
 
-            <li onClick={()=>{
-                if(!show2){
-                SetShow2(show2 = true)
-                SetShow(show = false)}
-
-                else
-                SetShow2(show2 = false)
-            }}>Figures</li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Something</li>
-            <li>This is an example</li>
+            
         </ul>
-        <CounterBox show = {show}/>
-        <FigureBox show2 = {show2}/>
+        <CounterBox />
+        <FigureBox />
+
+
+        <Testing />
+        <Something />
+
         </>
     )
 }

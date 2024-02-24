@@ -13,6 +13,7 @@
         box-shadow: 0 0 5px lightblue;
         position: relative;
         animation: show 0.5s ease-out ;
+        display: none;
     
         h2{
             position: absolute;
@@ -26,4 +27,8 @@
     @keyframes show {
         from{transform: translateY(-200%);}
         to{transform: translateY(0);}
+}
+
+.show{
+    display: flex;
 }

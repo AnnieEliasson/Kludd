@@ -6,10 +6,9 @@ import figure from "./figure.json"
 
 const FigureBox = ({show2}) => {
     const data = figure.data;
-    console.log(data);
 
 
-    if(show2)
+    
     
     return(
         <div className="FigureBox">
