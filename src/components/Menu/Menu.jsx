@@ -18,10 +18,10 @@ const Menu = () => {
     return(
         <ul className="Menu">
                       
-            <li id="CounterBox" onClick={ToggleShow}>Click Counter</li>
-            <li id="FigureBox" onClick={ToggleShow}>Figures</li>
-            <li id="Testing" onClick={ToggleShow}>Testing</li>
-            <li id="Something" onClick={ToggleShow}>Something</li>
+            <li id="CounterBox" onClick={ToggleShow}>&#9774; Click Counter</li>
+            <li id="FigureBox" onClick={ToggleShow}>&#9774; Figures</li>
+            <li id="Testing" onClick={ToggleShow}>&#9774; Testing</li>
+            <li id="Something" onClick={ToggleShow}>&#9774; Something</li>
 
         </ul>
     )
