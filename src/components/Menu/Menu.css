@@ -7,6 +7,8 @@
 
     li{
         cursor: pointer;
+        animation: test .5s ease-out forwards;
+        opacity: 0;
 
         &:hover{
             color: rgb(79, 141, 180);
@@ -14,4 +16,33 @@
     }
 
     
+}
+
+#CounterBox{
+    animation-delay: 0s;
+    
+}
+
+#FigureBox{
+    animation-delay: .2s;
+}
+
+#Testing{
+    animation-delay: .4s;
+}
+
+#Something{
+    animation-delay: .6s;
+}
+
+@keyframes test {
+    from{
+        transform: translateX(-200px);
+
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

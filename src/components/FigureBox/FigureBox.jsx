@@ -23,7 +23,8 @@ const FigureBox = () => {
                     type = {figure.type}
                     color = {figure.color}
                     image = {figure.image}
-                    bio = {figure.bio} />
+                    bio = {figure.bio} 
+                    key = {figure.name}/>
                 })
             }
             

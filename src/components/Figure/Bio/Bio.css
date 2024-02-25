@@ -13,6 +13,7 @@
     inset 2px 2px 2px white,
     inset -2px -2px 5px black;
     pointer-events: all;
+    animation: rotate .3s ease-in-out;
 
     button{
         background-color: transparent;
@@ -69,4 +70,13 @@
     from{backdrop-filter: blur(0px);}
 
     to{backdrop-filter: blur(5px);}
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(180deg) scale(0);
+    }
+    to{
+        transform: rotate(360deg) scale(1);
+    }
 }

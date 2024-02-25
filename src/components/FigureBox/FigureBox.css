@@ -14,7 +14,7 @@
         align-items: center;
         box-shadow: 0 0 5px lightblue;
         position: relative;
-        animation: show 0.5s ease-out ;
+        animation: scale 0.7s ease-out ;
         display: none;
     
         h2{
@@ -26,9 +26,9 @@
     
     }
     
-    @keyframes show {
-        from{transform: translateY(-200%);}
-        to{transform: translateY(0);}
+    @keyframes scale {
+        from{transform: scale(0);}
+        to{transform: scale(1);}
 }
 
 .show{

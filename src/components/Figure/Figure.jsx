@@ -13,10 +13,10 @@ const Figure = ({name, rank, type, image, bio}) => {
         const fade = document.querySelector(".fade")
         fade.classList.toggle("view-fade")
 
-        let bioInfo = document.querySelector(".bio-info")
+        const bioInfo = document.querySelector(".bio-info")
         bioInfo.innerHTML= bio
 
-        let smallPicture = document.querySelector(".small-picture")
+        const smallPicture = document.querySelector(".small-picture")
         smallPicture.style.backgroundImage = `url(${image})`
         
     }
