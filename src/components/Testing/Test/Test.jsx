@@ -19,6 +19,7 @@ const Test = () => {
                 </ul>
             </div>
             <p>Output: {name}</p>
+            
         </div>
     )
 }

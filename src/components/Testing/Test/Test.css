@@ -11,10 +11,34 @@
     }
 
     p{
-        font-size: 2rem;
-        margin-left: 40px;
-        border-bottom: 1px solid white;
-        height: fit-content;
-        width: 180px;
+        font-size: 1.3rem;
+        margin-left: 30px;
+        margin-top: 10px;
+        height: 100px;
+        width: 200px;
+        animation: output .7s;
+        padding: 5px;
+        border-radius: 8px;
+        border: 4px solid rgb(51, 63, 63);
+        text-align: center;
+        box-shadow: 2px 2px 5px black,
+        inset 2px 2px 2px black,
+        inset -1px -1px 2px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(29,29,29);
+        background: linear-gradient(60deg, rgba(22, 22, 22, 0.76) 0%, rgba(77, 79, 47, 0.531) 100%);
+
+        font-family: "Goldman", sans-serif;
+        color: greenyellow;
+        filter: grayscale(0.4) blur(.6px);
+
     }
+}
+
+@keyframes output{
+    from{transform: translateY(-400px);}
+    to{transform: translateY(0);}
+
 }

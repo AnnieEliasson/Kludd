@@ -2,10 +2,19 @@ import "./Button.css"
 
 const Button = ({fruit, name}) => {
 
-    const HandleClick = ()=>{
+    const HandleClick = (e)=>{
+
+        const allActive = document.querySelectorAll(".active")
+        
+        allActive.forEach(element => {
+            element.classList.remove("active")
+        });
 
         name(fruit)
-        
+
+        const active = e.target
+        active.classList.add("active")
+
     }
 
     return(

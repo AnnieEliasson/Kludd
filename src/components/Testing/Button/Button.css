@@ -12,14 +12,22 @@
     transition: .3s;
     font-size: 1.6rem;
     letter-spacing: 5px;
+    text-shadow: 2px 2px 2px black;
 
         
 
     &:hover{
         border: 0px solid darkslategray;
-        box-shadow: 2px 2px 5px black,
+        /* box-shadow: 2px 2px 5px black,
         inset 2px 2px 4px black,
-        inset -2px -2px 3px darkslategray;
+        inset -2px -2px 3px darkslategray; */
         letter-spacing: 7px;
     }
+}
+
+.active{
+    background-color: rgba(47, 79, 79, 0.736);
+    box-shadow: 2px 2px 5px black,
+        inset 2px 2px 4px black,
+        inset -2px -2px 3px white;
 }
