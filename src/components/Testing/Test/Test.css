@@ -1,0 +1,20 @@
+.Test{
+    border: 0px solid darkslategray;
+    display: flex;
+
+    ul{
+        list-style: none;
+
+        li{
+            padding: 10px;
+        }
+    }
+
+    p{
+        font-size: 2rem;
+        margin-left: 40px;
+        border-bottom: 1px solid white;
+        height: fit-content;
+        width: 180px;
+    }
+}

@@ -66,6 +66,10 @@
     display: flex;
 }
 
+.slide-down{
+    animation: slide-down .3s ease-in;
+}
+
 @keyframes fader {
     from{backdrop-filter: blur(0px);}
 
@@ -78,5 +82,14 @@
     }
     to{
         transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes slide-down {
+    from{
+        transform: rotate(0) scale(1);
+    }
+    to{
+        transform: rotate(-90deg) scale(0);
     }
 }

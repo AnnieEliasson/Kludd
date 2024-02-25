@@ -1,6 +1,7 @@
 .Testing {
     width: 500px;
     height: 300px;
+    padding: 20px;
     background: rgb(29,29,29);
     background: linear-gradient(360deg, rgba(29,29,29,1) 0%, rgb(61, 61, 61) 100%);
     border: 1px solid black;
