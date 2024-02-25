@@ -14,13 +14,8 @@
     letter-spacing: 5px;
     text-shadow: 2px 2px 2px black;
 
-        
-
     &:hover{
         border: 0px solid darkslategray;
-        /* box-shadow: 2px 2px 5px black,
-        inset 2px 2px 4px black,
-        inset -2px -2px 3px darkslategray; */
         letter-spacing: 7px;
         cursor: pointer;
     }

@@ -1,0 +1,34 @@
+.banderoll{
+    border: 15px solid rgb(39, 39, 39);
+    height: 90px;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-left: 10px;
+    background: linear-gradient(60deg, rgba(22, 22, 22, 0.76) 0%, rgba(196, 213, 211, 0.531) 100%);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0),
+    inset 0px 1px 3px rgb(91, 91, 91),
+    inset 0px -1px 5px white;
+    
+
+    .banderoll-text{
+        font-size: 3rem;
+        width: 1500px;
+        margin-left: 400px;
+        animation: banderoll 20s linear infinite;
+        font-family: "Goldman", sans-serif;
+        text-shadow: 1px 1px 5px cyan, 3px 3px 1px rgb(0, 0, 0);
+        color: rgb(43, 42, 43);
+        text-wrap: nowrap;
+        filter: blur(1px);
+    }
+}
+
+@keyframes banderoll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-170%);
+    }
+}

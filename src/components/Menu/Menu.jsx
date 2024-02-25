@@ -15,13 +15,15 @@ const Menu = () => {
         clicked.classList.toggle("show")
     }
     
+
     return(
         <ul className="Menu">
                       
             <li id="CounterBox" onClick={ToggleShow}>&#9774; Click Counter</li>
             <li id="FigureBox" onClick={ToggleShow}>&#9774; Figures</li>
-            <li id="Testing" onClick={ToggleShow}>&#9774; Testing</li>
-            <li id="Something" onClick={ToggleShow}>&#9774; Something</li>
+            <li id="Testing" onClick={ToggleShow}>&#9774; Automat</li>
+            <li id="Something" onClick={ToggleShow}>&#9774; Rolling Text</li>
+            <li id="Example" onClick={ToggleShow}>&#9774; Example</li>
 
         </ul>
     )

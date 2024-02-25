@@ -55,6 +55,10 @@ li::after{
     animation-delay: .3s;
 }
 
+#Example{
+    animation-delay: .4s;
+}
+
 @keyframes test {
     from{
         transform: translateX(-200px);

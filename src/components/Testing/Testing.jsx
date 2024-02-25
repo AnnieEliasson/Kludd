@@ -4,7 +4,7 @@ import "./Testing.css"
 const Testing = () => {
     return(
         <div className="Testing">
-            <h2>Testing</h2>
+            <h2>Automat</h2>
             <Test />
         </div>
     )

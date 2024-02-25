@@ -1,13 +1,15 @@
+import RollingText from "./RollingText/RollingText"
 import "./Something.css"
 
 const Something = () => {
+
+    const text = '"Det viktiga är inte vad man gör, utan att man gör det med stil." - Lars Demian'
+
     return(
         <div className="Something">
-            <h2>Something</h2>
+            <h2>Rolling Text</h2>
 
-            <div className="banderoll">
-                <p className="banderoll-text">"Det viktiga är inte vad man gör, utan att man gör det med stil." - Lars Demian</p>
-            </div>
+            <RollingText text = {text} />
         </div>
     )
 }
