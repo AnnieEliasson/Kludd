@@ -22,6 +22,7 @@
         inset 2px 2px 4px black,
         inset -2px -2px 3px darkslategray; */
         letter-spacing: 7px;
+        cursor: pointer;
     }
 }
 
