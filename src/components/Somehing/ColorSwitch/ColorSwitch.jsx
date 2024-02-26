@@ -1,6 +1,11 @@
 import "./ColorSwitch.css"
 
-const ColorSwitch = ({colors}) => {
+const ColorSwitch = ({colors, setColor}) => {
+
+    const handleClick= (e) => {
+        setColor(e.target.value)
+
+    }
 
     
     return(
@@ -10,7 +15,7 @@ const ColorSwitch = ({colors}) => {
         {
             colors.map((color)=>{
                 return(
-                    <button style={{backgroundColor : color}} className="color-button">
+                    <button key={color} onClick={handleClick} value={color} style={{backgroundColor : color}} className="color-button">
                         
                     </button>
                 )

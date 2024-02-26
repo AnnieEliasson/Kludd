@@ -12,7 +12,7 @@ const DropDown = ({personNames, onePerson}) => {
             
             {
                 personNames.map((person)=>{
-                    return <option value={person.firstname}>{person.firstname}</option>
+                    return <option key={person.firstname} value={person.firstname}>{person.firstname} {person.lastname}</option>
                 })
             }
 
