@@ -13,9 +13,9 @@
 
     .banderoll-text{
         font-size: 3rem;
-        width: 1500px;
+        width: 200%;
         margin-left: 400px;
-        animation: banderoll 20s linear infinite;
+        animation: banderoll 8s linear infinite;
         font-family: "Goldman", sans-serif;
         text-shadow: 1px 1px 5px cyan, 3px 3px 1px rgb(0, 0, 0);
         color: rgb(43, 42, 43);

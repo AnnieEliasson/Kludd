@@ -1,0 +1,20 @@
+#textInput{
+    font-size: 1.6rem;
+    font-family: "Annie Use Your Telescope", cursive;
+    background: linear-gradient(120deg, rgb(150, 139, 118), black);
+    border: 5px solid rgb(49, 62, 71);
+    border-radius: 10px;
+    color: white;
+    margin-top: 30px;
+    width: 340px;
+    text-align: center;
+    box-shadow: 2px 2px 2px black,
+    inset -1px -1px 2px white,
+    inset 1px 1px 2px black;
+
+    &::placeholder{
+        color: rgba(192, 190, 190, 0.853);
+        text-shadow: 1px 2px 2px black;
+    }
+
+}
