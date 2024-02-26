@@ -1,0 +1,29 @@
+.ColorSwitch{
+    border: 0px solid black;
+    display: flex;
+    margin-bottom: 60px;
+    border: 5px solid rgb(66, 49, 34);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background: linear-gradient(120deg, rgb(150, 139, 118), black);
+
+    .color-button{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 50%;
+        border: 0;
+        cursor: pointer;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.356), rgba(0, 0, 0, 0.445));
+        box-shadow: 5px 5px 5px black,
+        inset 1px 1px 1px white,
+        inset -1px -1px 2px rgb(48, 48, 48);
+
+        &:hover{
+            box-shadow: 0 0 2px black,
+            inset 2px 2px 3px black,
+            inset -1px -1px 2px white;
+            
+        }
+    }
+}
