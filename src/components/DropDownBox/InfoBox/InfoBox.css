@@ -1,6 +1,7 @@
 .InfoBox{
     width: 300px;
     background-color: darkslategray;
+    background: linear-gradient(90deg, darkslategray, rgb(59, 94, 94));
     margin-top: 30px;
     border: 1px solid darkcyan;
     border-radius: 10px;

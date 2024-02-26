@@ -22,7 +22,7 @@
 
         &:hover::after{
             transform: translateX(0);
-            transition: 0.3s;
+            transition: 0.2s;
         }
 
     }
@@ -36,6 +36,21 @@ li::after{
     height: 3px;
     transform: translateX(-100%);
     border-radius: 50%;
+}
+
+.active-item{
+    color: rgb(34, 94, 137);
+    letter-spacing: 2px;
+}
+
+.active-item::after{
+    content: "";
+    background-color: rgb(34, 94, 137);
+    width: 100px;
+    height: 3px;
+    border-radius: 50%;
+    transform: translateX(0);
+    box-shadow: 2px 2px 5px black;
 }
 
 

@@ -5,6 +5,11 @@ const Menu = () => {
 
     const ToggleShow = (e)=>{
 
+        const allActive = document.querySelectorAll(".active-item")
+        allActive.forEach(element => {
+            element.classList.remove("active-item")
+        });
+
         const allVisible = document.querySelectorAll(".show")
         allVisible.forEach(element => {
             element.classList.remove("show")
@@ -13,6 +18,8 @@ const Menu = () => {
 
         const clicked = document.querySelector(`.${e.target.id}`)
         clicked.classList.toggle("show")
+
+        e.target.classList.add("active-item")
     }
     
 
