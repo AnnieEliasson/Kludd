@@ -1,12 +1,11 @@
 .InfoBox{
     width: 300px;
-    height: 480px;
     background-color: darkslategray;
     background: linear-gradient(90deg, darkslategray, rgb(59, 94, 94));
     margin-top: 10px;
     border: 1px solid darkcyan;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;

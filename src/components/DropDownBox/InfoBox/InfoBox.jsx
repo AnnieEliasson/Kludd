@@ -10,7 +10,7 @@ const InfoBox = ({onePersonObj}) => {
                 <li><span>Pant color -</span> {onePersonObj.pant_color}</li>
                 <li><span>Favorit food -</span> {/* {onePersonObj.favorite_food} */}<List items = {onePersonObj.favorite_food} /> </li>
                 <li><span>Favorit tool -</span> {onePersonObj.favorite_tool}</li>
-                <li><span>Pet -</span> {onePersonObj.pet}</li>
+                <li><span>Pet -</span> {onePersonObj.pet.length <= 1 ? `${onePersonObj.pet}` : <List items = {onePersonObj.pet} />}</li>
                 <li><span>Hobby -</span> {/* {onePersonObj.hobby} */}<List items={onePersonObj.hobby} /></li>
             </ul>
             

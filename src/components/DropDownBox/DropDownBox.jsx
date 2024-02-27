@@ -5,13 +5,6 @@ import data from "./person.json"
 import { useState } from "react"
 import About from "./About/About"
 
-
-console.log('Company: ',data.construction_company);
-console.log('Backstory: ',data.backstory);
-console.log('Past projects: ',data.past_projects);
-
-
-
 const persons = data.construction_workers
 
 const personNames = [
