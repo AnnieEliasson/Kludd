@@ -8,6 +8,7 @@ const MoveInGridBox = () => {
     return (
     <div className="MoveInGridBox">
         <h2>MoveInGrid</h2>
+        <p className="instructions">Use 'W' 'A' 'S' 'D' to move, and hold 'Space' to Fire!</p>
         
         <Grid />
     </div>

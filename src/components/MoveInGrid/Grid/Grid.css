@@ -7,3 +7,15 @@
     grid-template-columns: repeat(12, 50px);
     grid-template-rows: repeat(6, 50px);
 }
+
+.fire{
+    background-image: url(../../../../public/fire.gif);
+    background-size: contain;
+    height: 50px;
+    width: 100px;
+    display: none;
+}
+
+.show-fire{
+    display: block;
+}

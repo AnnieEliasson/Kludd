@@ -13,6 +13,7 @@ const Grid = () => {
         <div className="Grid">
             <Controller x={x} setX={setX} y={y} setY={setY} />
             <Character x={x} y={y} />
+            <div className="fire" style={{gridColumn: x + 1 , gridRow: y}}></div>
         </div>
     )
 }

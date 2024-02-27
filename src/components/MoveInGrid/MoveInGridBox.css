@@ -19,6 +19,12 @@
         letter-spacing: 3px;
     }
 
+    .instructions{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
 }
 
 @keyframes show {
