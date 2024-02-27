@@ -1,8 +1,18 @@
 import "./DropDownBox.css"
 import DropDown from "./DropDown/DropDown"
 import InfoBox from "./InfoBox/InfoBox"
-import persons from "./person.json"
+import data from "./person.json"
 import { useState } from "react"
+import About from "./About/About"
+
+
+console.log('Company: ',data.construction_company);
+console.log('Backstory: ',data.backstory);
+console.log('Past projects: ',data.past_projects);
+
+
+
+const persons = data.construction_workers
 
 const personNames = [
 
@@ -33,7 +43,12 @@ const DropDownBox = () => {
     return(
     <div className="DropDownBox">
         <div className="container">
+        <About company = {data.construction_company} backstory = {data.backstory} past_projects={data.past_projects}/>
+        </div>
+    <div className="container">
         <h2>DropDown</h2>
+
+        
 
         <DropDown personNames={personNames} onePerson={setOnePerson}/>
         <InfoBox onePersonObj = {onePersonObj} />

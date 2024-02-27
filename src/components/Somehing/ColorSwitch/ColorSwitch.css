@@ -18,6 +18,7 @@
         box-shadow: 5px 5px 5px black,
         inset 1px 1px 1px white,
         inset -1px -1px 2px rgb(48, 48, 48);
+        transition: 0.3s;
 
         &:hover{
             box-shadow: 0 0 2px black,

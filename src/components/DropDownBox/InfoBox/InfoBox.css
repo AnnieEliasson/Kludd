@@ -1,27 +1,36 @@
 .InfoBox{
     width: 300px;
+    height: 480px;
     background-color: darkslategray;
     background: linear-gradient(90deg, darkslategray, rgb(59, 94, 94));
-    margin-top: 30px;
+    margin-top: 10px;
     border: 1px solid darkcyan;
     border-radius: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
     box-shadow: 2px 2px 5px black;
 
-    ul{
+    .person-info{
         list-style: none;
+        padding: 0 10px;
 
-        li{
-            margin: 30px 0;
-            border-bottom: 1px solid black;
+        
+    }
+    .person-info > li{
+        margin: 10px 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
 
-            span{
-                color: rgb(135, 180, 221);
-            }
+        span{
+            color: rgb(135, 180, 221);
         }
+    }
+
+    .person-info:last-child{
+        border: 0;
+        margin-bottom: -13px;
     }
 }

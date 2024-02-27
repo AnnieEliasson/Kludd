@@ -29,13 +29,13 @@
         align-items: center;
         background: rgb(29,29,29);
         background: linear-gradient(60deg, rgba(22, 22, 22, 0.76) 0%, rgba(77, 79, 47, 0.531) 100%);
-
         font-family: "Goldman", sans-serif;
         color: greenyellow;
         filter: grayscale(0.4) blur(.6px);
 
     }
 }
+
 
 @keyframes output{
     from{transform: translateY(-400px);}

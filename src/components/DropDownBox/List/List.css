@@ -1,0 +1,12 @@
+.List{
+    font-size: 1rem;
+    list-style-type: disc;
+    margin-top: 20px;
+    
+    
+    
+}
+.List-Items{
+    border: 0px;
+    margin-bottom: 15px;
+}

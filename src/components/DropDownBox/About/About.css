@@ -1,0 +1,55 @@
+.About{
+    width: 300px;
+    height: 530px;
+    background-color: darkslategray;
+    background: linear-gradient(90deg, darkslategray, rgb(59, 94, 94));
+    margin-top: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    padding: 10px;
+
+    .title{
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    .town{
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        color: rgb(172, 194, 213);
+    }
+
+    .project-list{
+        margin-left: 20px;
+
+        li{
+            cursor: pointer;
+            font-size: 1.2rem;
+
+            &:hover{
+                color: rgb(92, 160, 238);
+            }
+        }
+
+        
+    }
+}
+
+.backstory{
+    margin-top: -15px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.project-desc{
+    color: rgb(172, 194, 213);
+    display: none;
+    pointer-events: none;
+    font-size: 1rem;
+}
+
+.project-desc-show{
+    display: block;
+    color: rgb(172, 194, 213);
+}
