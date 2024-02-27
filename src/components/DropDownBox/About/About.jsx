@@ -30,8 +30,8 @@ const About = ({company, backstory, past_projects}) => {
             <p className="backstory">{backstory}</p>
 
             {/* component */}
+            <p className="town">Past Projects: </p>
             <ul className="project-list">
-                Past projects
                 {past_projects.map((project)=>{
                     return(<li onClick={handleClick} key={project.name}>{project.name}<p className="project-desc">{project.description}</p></li>)
                 })}

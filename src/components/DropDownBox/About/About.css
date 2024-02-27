@@ -13,10 +13,12 @@
     }
 
     .town{
-        border-bottom: 1px solid black;
+        
         padding-bottom: 5px;
         color: rgb(172, 194, 213);
     }
+
+    
 
     .project-list{
         margin-left: 20px;
@@ -37,8 +39,9 @@
 .backstory{
     margin-top: -15px;
     margin-bottom: 10px;
-    padding-bottom: 5px;
+    padding: 5px;
     border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 
 .project-desc{

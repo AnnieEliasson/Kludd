@@ -31,6 +31,7 @@ const Menu = () => {
             <li id="Testing" onClick={ToggleShow}>&#9774; Automat</li>
             <li id="Something" onClick={ToggleShow}>&#9774; Rolling Text</li>
             <li id="DropDownBox" onClick={ToggleShow}>&#9774; DropDown</li>
+            <li id="MoveInGridBox" onClick={ToggleShow}>&#9774; Move In Grid</li>
 
         </ul>
     )

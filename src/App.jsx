@@ -5,7 +5,7 @@ import Menu from "./components/Menu/Menu";
 import Testing from "./components/Testing/Testing";
 import Something from "./components/Somehing/Something";
 import DropDownBox from "./components/DropDownBox/DropDownBox";
-import InfoBox from "./components/DropDownBox/InfoBox/InfoBox";
+import MoveInGridBox from "./components/MoveInGrid/MoveInGridBox";
 
 
 
@@ -19,6 +19,7 @@ const App = () => {
         <Testing />
         <Something />
         <DropDownBox />
+        <MoveInGridBox />
 
         
         

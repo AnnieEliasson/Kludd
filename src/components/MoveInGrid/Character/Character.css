@@ -1,0 +1,12 @@
+.Character{
+    /* grid-area: 5 / 2; */
+    transform: scaleX(-1);
+}
+
+.right{
+    transform: scaleX(-1)
+}
+
+.left{
+    transform: scaleX(1)
+}
