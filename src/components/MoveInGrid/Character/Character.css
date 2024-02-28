@@ -1,6 +1,7 @@
 .Character{
     /* grid-area: 5 / 2; */
     transform: scaleX(-1);
+    z-index: 2;
 }
 
 .right{

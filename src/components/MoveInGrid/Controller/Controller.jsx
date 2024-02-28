@@ -39,6 +39,9 @@ const Controller = ({x, setX, y, setY}) => {
     const Fire = () => {
       document.querySelector(".fire").classList.add("show-fire")
     }
+    const Fire2 = () => {
+      document.querySelector(".fire2").classList.add("show-fire")
+    }
 
   useEffect(() => {
     const keyDownHandler = event => {
@@ -53,12 +56,17 @@ const Controller = ({x, setX, y, setY}) => {
         Down()
       } else if (event.keyCode == "32"){
         Fire()
+      } else if (event.key == "b"){
+        Fire2()
       }
     };
 
     const keyUpHandler = event => {
       if(event.keyCode == "32"){
         document.querySelector(".fire").classList.remove("show-fire")
+      }
+      if(event.key == "b"){
+        document.querySelector(".fire2").classList.remove("show-fire")
       }
     }
 
