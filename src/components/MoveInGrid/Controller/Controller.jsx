@@ -43,6 +43,14 @@ const Controller = ({x, setX, y, setY}) => {
       document.querySelector(".fire2").classList.add("show-fire")
     }
 
+    const Talk = () => {
+      document.querySelector(".talk").classList.add("show-fire")
+
+      setTimeout(()=>{
+        document.querySelector(".talk").classList.remove("show-fire")
+      }, 3000)
+    }
+
   useEffect(() => {
     const keyDownHandler = event => {
 
@@ -58,6 +66,8 @@ const Controller = ({x, setX, y, setY}) => {
         Fire()
       } else if (event.key == "b"){
         Fire2()
+      } else if (event.key == "e"){
+        Talk()
       }
     };
 

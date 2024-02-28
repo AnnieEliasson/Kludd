@@ -4,10 +4,21 @@
     z-index: 2;
 }
 
-.right{
-    transform: scaleX(-1)
+.talk{
+    width: 120px;
+    font-size: .8rem;
+    background-color: rgba(0, 0, 0, 0.099);
+    border-radius: 50% 50% 50% 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 139, 139, 0.555);
+    animation: fade 1s forwards;
+    opacity: 0;
 }
 
-.left{
-    transform: scaleX(1)
+@keyframes fade {
+    to{
+        opacity: 1;
+    }
 }
