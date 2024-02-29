@@ -2,6 +2,7 @@ import {useEffect} from 'react';
 
 const Controller = ({x, setX, y, setY}) => {
 
+  
     const Right = () => {
         x ++
         if(x > 12){
@@ -85,6 +86,7 @@ const Controller = ({x, setX, y, setY}) => {
 
     return () => {
       document.removeEventListener('keydown', keyDownHandler);
+      document.removeEventListener('keyup', keyUpHandler);
     };
   }, []);
 };

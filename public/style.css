@@ -16,12 +16,4 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	animation: bg 7s ease-out 2s forwards;
-}
-
-@keyframes bg {
-	to{
-		background-position-y: 0;
-	}
-	
 }
