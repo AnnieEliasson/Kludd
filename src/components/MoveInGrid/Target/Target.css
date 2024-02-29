@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: 2 / 8;
     box-shadow: 0px 0px 5px cyan,
     inset 1px 1px 5px white,
     inset -2px -2px 10px black;

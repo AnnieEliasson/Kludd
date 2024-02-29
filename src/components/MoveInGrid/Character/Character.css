@@ -67,10 +67,11 @@
         background-color: darkcyan;
         box-shadow: inset 1px 1px 1px white,
         inset -2px -2px 3px black;
-        
         opacity: 0;
 
     }
+
+    
 
     .bullets{
         animation: shoot .6s infinite;

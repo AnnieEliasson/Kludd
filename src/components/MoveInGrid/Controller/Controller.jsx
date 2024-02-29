@@ -53,11 +53,11 @@ const Controller = ({x, setX, y, setY, }) => {
       }
       
 
-    /* const element1 = document.querySelector('.fire2'); 
-    const element2 = document.querySelector('.Target'); 
+    const bulletLine = document.querySelector('.fire2'); 
+    const target = document.querySelector('.Target'); 
  
-    const rect1 = element1.getBoundingClientRect(); 
-    const rect2 = element2.getBoundingClientRect(); 
+    const rect1 = bulletLine.getBoundingClientRect(); 
+    const rect2 = target.getBoundingClientRect(); 
  
 if (!(rect1.right < rect2.left ||  
       rect1.left > rect2.right ||  
@@ -67,7 +67,7 @@ if (!(rect1.right < rect2.left ||
   
 } else { 
   console.log('Nuddar INTE'); 
-}  */
+} 
     }
 
     const Talk = () => {
