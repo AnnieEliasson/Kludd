@@ -22,6 +22,12 @@ const Character = ({x, y}) => {
                 <div className="bullets2"></div>
                 <div className="bullets3"></div>
             </div>
+
+            <div className="fire2-left" style={{gridColumn: x - 2, gridRow: y}}>
+                <div className="bullets"></div>
+                <div className="bullets2"></div>
+                <div className="bullets3"></div>
+            </div>
             </>
     )
 }

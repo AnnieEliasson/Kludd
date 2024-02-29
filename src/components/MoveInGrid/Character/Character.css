@@ -4,6 +4,10 @@
     z-index: 2;
 }
 
+.mirror{
+    transform: scaleX(1);
+}
+
 .fire{
     background-image: url(../../../../public/fire.gif);
     background-size: contain;
@@ -13,12 +17,46 @@
     z-index: 2;
 }
 
+.fire2-left{
+    width: 550px;
+    height: 10px;
+    border: 0px solid black;
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    transform: translateX(-100%);
+
+    .bullets, .bullets2, .bullets3{
+        width: 20px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: darkcyan;
+        box-shadow: inset 1px 1px 1px white,
+        inset -2px -2px 3px black;
+        
+        opacity: 0;
+
+    }
+
+    .bullets{
+        animation: shoot-left .6s infinite;
+    }
+
+    .bullets2{
+        animation: shoot-left .6s 0.2s infinite;
+    }
+
+    .bullets3{
+        animation: shoot-left .6s 0.4s infinite;
+    }
+
+}
+
 .fire2{
     width: 550px;
-    height: 50px;
+    height: 10px;
     border: 0px solid black;
-    padding-top: 20px;
-    align-items: center;
+    margin-top: 20px;
     display: none;
     align-items: center;
 
@@ -73,6 +111,17 @@
     }
     to{
         transform: translateX(600px);
+        opacity: 1;
+    }
+}
+
+@keyframes shoot-left {
+    from{
+        transform: translateX(600px);
+        opacity: .3;
+    }
+    to{
+        transform: translateX(0);
         opacity: 1;
     }
 }

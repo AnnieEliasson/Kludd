@@ -1,10 +1,11 @@
 import {useEffect} from 'react';
 
-const Controller = ({x, setX, y, setY}) => {
+const Controller = ({x, setX, y, setY, }) => {
 
-  
     const Right = () => {
         x ++
+        const avatar = document.querySelector(".Character")
+        avatar.classList.remove("mirror")
         if(x > 12){
           x=12
         }
@@ -13,6 +14,8 @@ const Controller = ({x, setX, y, setY}) => {
 
     const Left = () => {
         x --
+        const avatar = document.querySelector(".Character")
+        avatar.classList.add("mirror")
 
         if(x < 1){
           x=1
@@ -41,7 +44,30 @@ const Controller = ({x, setX, y, setY}) => {
       document.querySelector(".fire").classList.add("show-fire")
     }
     const Fire2 = () => {
-      document.querySelector(".fire2").classList.add("show-fire")
+      
+
+      if(document.querySelector(".Character").classList == ('Character mirror')){
+        document.querySelector(".fire2-left").classList.add("show-fire")
+      } else {
+        document.querySelector(".fire2").classList.add("show-fire")
+      }
+      
+
+    /* const element1 = document.querySelector('.fire2'); 
+    const element2 = document.querySelector('.Target'); 
+ 
+    const rect1 = element1.getBoundingClientRect(); 
+    const rect2 = element2.getBoundingClientRect(); 
+ 
+if (!(rect1.right < rect2.left ||  
+      rect1.left > rect2.right ||  
+      rect1.bottom < rect2.top ||  
+      rect1.top > rect2.bottom)) { 
+  console.log('Nuddar'); 
+  
+} else { 
+  console.log('Nuddar INTE'); 
+}  */
     }
 
     const Talk = () => {
@@ -78,6 +104,7 @@ const Controller = ({x, setX, y, setY}) => {
       }
       if(event.key == "b"){
         document.querySelector(".fire2").classList.remove("show-fire")
+        document.querySelector(".fire2-left").classList.remove("show-fire")
       }
     }
 

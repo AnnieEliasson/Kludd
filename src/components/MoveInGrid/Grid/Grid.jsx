@@ -9,8 +9,6 @@ const Grid = () => {
     let [x, setX] = useState(2)
     let [y, setY] = useState(5)
 
-
-
     return(
         <div className="Grid">
             <Controller x={x} setX={setX} y={y} setY={setY} />
