@@ -11,8 +11,8 @@
 .fire{
     background-image: url(../../../../public/fire.gif);
     background-size: contain;
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 85px;
     display: none;
     z-index: 2;
 }
@@ -55,7 +55,7 @@
 .fire2{
     width: 550px;
     height: 10px;
-    border: 0px solid black;
+    border: 1px solid black;
     margin-top: 20px;
     display: none;
     align-items: center;
@@ -118,7 +118,7 @@
 
 @keyframes shoot-left {
     from{
-        transform: translateX(600px);
+        transform: translateX(500px);
         opacity: .3;
     }
     to{

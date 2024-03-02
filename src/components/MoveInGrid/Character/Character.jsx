@@ -1,6 +1,9 @@
 import "./Character.css"
 
 const Character = ({x, y}) => {
+    const handleChange = (e) => {
+        console.log(e);
+    }
 
     return (<>
         <img className="Character" style={{gridColumn: x, gridRow: y}} src="http://www.avatarsinpixels.com/chibi/eyJIYWlyTG93ZXIiOi
@@ -18,13 +21,13 @@ const Character = ({x, y}) => {
             <div className="fire" style={{gridColumn: x + 1 , gridRow: y}}></div>
             
             <div className="fire2" style={{gridColumn: x + 1 , gridRow: y}}>
-                <div className="bullets"></div>
+                <div className="bullets" ></div>
                 <div className="bullets2"></div>
                 <div className="bullets3"></div>
             </div>
 
-            <div className="fire2-left" style={{gridColumn: x - 2, gridRow: y}}>
-                <div className="bullets"></div>
+            <div className="fire2-left" style={{gridColumn: x , gridRow: y}}>
+                <div className="bullets" ></div>
                 <div className="bullets2"></div>
                 <div className="bullets3"></div>
             </div>

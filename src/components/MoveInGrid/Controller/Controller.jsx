@@ -1,6 +1,8 @@
 import {useEffect} from 'react';
 
-const Controller = ({x, setX, y, setY, }) => {
+const Controller = ({x, setX, y, setY, NewTarget }) => {
+
+  let targetLife = 10
 
     const Right = () => {
         x ++
@@ -54,20 +56,44 @@ const Controller = ({x, setX, y, setY, }) => {
       
 
     const bulletLine = document.querySelector('.fire2'); 
-    const target = document.querySelector('.Target'); 
+    const bulletLineLeft = document.querySelector('.fire2-left'); 
+    const target = document.querySelector('.Target');
+
  
     const rect1 = bulletLine.getBoundingClientRect(); 
+    const rect1Left = bulletLineLeft.getBoundingClientRect(); 
     const rect2 = target.getBoundingClientRect(); 
  
 if (!(rect1.right < rect2.left ||  
       rect1.left > rect2.right ||  
       rect1.bottom < rect2.top ||  
       rect1.top > rect2.bottom)) { 
-  console.log('Nuddar'); 
+
+  targetLife --
+  console.log(targetLife);
+
+  if(targetLife === 0){
+    NewTarget()
+    targetLife = 10
+  }
   
-} else { 
-  console.log('Nuddar INTE'); 
 } 
+
+
+if (!(rect1Left.right < rect2.left ||  
+  rect1Left.left > rect2.right ||  
+  rect1Left.bottom < rect2.top ||  
+  rect1Left.top > rect2.bottom)) {
+
+targetLife --
+  console.log(targetLife);
+
+  if(targetLife === 0){
+    NewTarget()
+    targetLife = 10
+  }
+
+}
     }
 
     const Talk = () => {
