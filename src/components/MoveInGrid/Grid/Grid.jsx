@@ -30,7 +30,7 @@ const Grid = () => {
     return(
         <div className="Grid">
             <Controller x={x} setX={setX} y={y} setY={setY} NewTarget={NewTarget} />
-            <Character x={x} y={y} />
+            <Character x={x} y={y} targetX={targetX} targetY={targetY} />
             <Target charX={x} charyY={y} targetX={targetX} targetY={targetY} setTargetX={setTargetX} setTargetY={setTargetY} />
         </div>
     )
