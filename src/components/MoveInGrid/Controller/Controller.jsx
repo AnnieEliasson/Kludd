@@ -1,8 +1,8 @@
 import {useEffect} from 'react';
 
 const Controller = ({x, setX, y, setY, NewTarget }) => {
-
-  let targetLife = 10
+  
+ let targetHP = 10
 
     const Right = () => {
         x ++
@@ -54,6 +54,7 @@ const Controller = ({x, setX, y, setY, NewTarget }) => {
         document.querySelector(".fire2").classList.add("show-fire")
       }
       
+      const hpBar = document.querySelector(".target-hp")
 
     const bulletLine = document.querySelector('.fire2'); 
     const bulletLineLeft = document.querySelector('.fire2-left'); 
@@ -69,12 +70,36 @@ if (!(rect1.right < rect2.left ||
       rect1.bottom < rect2.top ||  
       rect1.top > rect2.bottom)) { 
 
-  targetLife --
-  console.log(targetLife);
+        targetHP --
+  console.log(targetHP);
 
-  if(targetLife === 0){
+  if(targetHP <= 8){
+    
+    hpBar.style.backgroundColor = "yellowgreen"
+    hpBar.style.width = "30px"
+  }
+
+  if(targetHP <= 6){
+    
+    hpBar.style.backgroundColor = "yellow"
+    hpBar.style.width = "25px"
+  }
+
+  if(targetHP <= 4){
+    hpBar.style.backgroundColor = "orange"
+    hpBar.style.width = "10px"
+  }
+
+  if(targetHP <= 2){
+    hpBar.style.backgroundColor = "red"
+    hpBar.style.width = "5px"
+  }
+
+  if(targetHP <= 0){
     NewTarget()
-    targetLife = 10
+    targetHP = 10
+    hpBar.style.backgroundColor = "green"
+    hpBar.style.width = "40px"
   }
   
 } 
@@ -85,12 +110,41 @@ if (!(rect1Left.right < rect2.left ||
   rect1Left.bottom < rect2.top ||  
   rect1Left.top > rect2.bottom)) {
 
-targetLife --
-  console.log(targetLife);
+    targetHP --
+  console.log(targetHP);
 
-  if(targetLife === 0){
+  if(targetHP <= 8){
+    
+    hpBar.style.backgroundColor = "yellowgreen"
+    hpBar.style.width = "30px"
+  }
+
+  if(targetHP <= 6){
+    
+    hpBar.style.backgroundColor = "yellow"
+    hpBar.style.width = "25px"
+  }
+
+  if(targetHP <= 4){
+    hpBar.style.backgroundColor = "orange"
+    hpBar.style.width = "10px"
+  }
+
+  if(targetHP <= 2){
+    hpBar.style.backgroundColor = "red"
+    hpBar.style.width = "5px"
+  }
+
+  if(targetHP <= 0){
     NewTarget()
-    targetLife = 10
+    targetHP = 10
+    hpBar.style.backgroundColor = "green"
+    hpBar.style.width = "40px"
+  }
+
+  if(targetHP <= 0){
+    NewTarget()
+    targetHP = 10
   }
 
 }

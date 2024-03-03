@@ -1,14 +1,19 @@
 import "./Target.css"
 
 
+const Target = ({targetX, targetY}) => {
 
-const Target = ({charX, charyY, targetX, setTargetX, targetY, setTargetY}) => {
 
-    return(
+
+    return(<>
+        
         <div className="Target" 
         style={{gridColumn: targetX, gridRow: targetY}}>
-            <div></div>
+            <div className="target-hp" style={{gridColumn: targetX, gridRow: targetY}}></div>
+            <div className="Target-inner"></div>
         </div>
+        </>
+
     )
 }
 

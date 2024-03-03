@@ -6,7 +6,6 @@ const Character = ({x, y, targetX, targetY}) => {
     let end = 13
     let endLeft = 1
     if(y === targetY){
-        console.log("här");
         end = targetX
         endLeft = targetX
 
