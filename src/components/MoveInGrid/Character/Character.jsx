@@ -3,12 +3,12 @@ import "./Character.css"
 
 const Character = ({x, y, targetX, targetY}) => {
 
+    // stop bullet line at target
     let end = 13
     let endLeft = 1
     if(y === targetY){
         end = targetX
         endLeft = targetX
-
     } 
 
     return (<>

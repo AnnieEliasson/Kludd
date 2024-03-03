@@ -6,14 +6,15 @@ import Target from "../Target/Target"
 
 const Grid = () => {
 
+    // Character position
     const [x, setX] = useState(2)
     const [y, setY] = useState(5)
 
+    // Target position
     const [targetX, setTargetX] = useState(10)
     const [targetY, setTargetY] = useState(5)
 
-
-
+    // Generate new random target
     const NewTarget = () => {
 
             const newTargetX = Math.ceil(Math.random() * (12 - 0))
@@ -23,8 +24,7 @@ const Grid = () => {
 
     }
 
-    
-
+    // New target if stepped on
     if(targetX === x && targetY === y){
         NewTarget()
     }

@@ -1,9 +1,6 @@
 import "./Target.css"
 
-
 const Target = ({targetX, targetY}) => {
-
-
 
     return(<>
         

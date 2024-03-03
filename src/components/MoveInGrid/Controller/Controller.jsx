@@ -3,58 +3,61 @@ import {useEffect} from 'react';
 const Controller = ({x, setX, y, setY, NewTarget }) => {
   
  let targetHP = 10
+ let newX = x
+ let newY = y
 
     const Right = () => {
-        x ++
+        newX ++
         const avatar = document.querySelector(".Character")
         avatar.classList.remove("mirror")
-        if(x > 12){
-          x=12
+        if(newX > 12){
+          newX = 12
         }
-        setX(x)
+        setX(newX)
     }
 
     const Left = () => {
-        x --
+        newX --
         const avatar = document.querySelector(".Character")
         avatar.classList.add("mirror")
 
-        if(x < 1){
-          x=1
+        if(newX < 1){
+          newX = 1
         }
-        setX(x)
+        setX(newX)
     }
 
     const Up = () => {
-        y --
-        if(y < 1){
-          y=1
+        newY --
+        if(newY < 1){
+          newY = 1
         }
-        setY(y)
+        setY(newY)
     }
 
     const Down = () => {
-        y ++
-        if(y > 6){
-          y=6
+        newY ++
+        if(newY > 6){
+          newY = 6
         }
-        setY(y)
+        setY(newY)
     }
 
 
     const Fire = () => {
       document.querySelector(".fire").classList.add("show-fire")
     }
+
+
     const Fire2 = () => {
       
-
       if(document.querySelector(".Character").classList == ('Character mirror')){
         document.querySelector(".fire2-left").classList.add("show-fire")
       } else {
         document.querySelector(".fire2").classList.add("show-fire")
       }
       
-      const hpBar = document.querySelector(".target-hp")
+    const hpBar = document.querySelector(".target-hp")
 
     const bulletLine = document.querySelector('.fire2'); 
     const bulletLineLeft = document.querySelector('.fire2-left'); 
